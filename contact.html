@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropCare - Contact Us</title>
+    <meta name="description"
+        content="Get in touch with CropCare for expert advice, farming resources, and sustainable agriculture support. Contact us via email or phone.">
+
+    <link rel="icon" type="image/png" href="assets/images/favicon.jpg">
+
+    <meta property="og:title" content="CropCare - Contact Us">
+    <meta property="og:description"
+        content="Get in touch with CropCare for expert advice, farming resources, and sustainable agriculture support.">
+    <meta property="og:image" content="assets/images/og-preview.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com/contact.html">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+</head>
+
+<body>
+    <header role="banner">
+        <div class="nav-container">
+            <a href="index.html" class="logo">CropCare</a>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p>Have a question or suggestion? We'd love to hear from you and help you with your agricultural needs!</p>
+        </div>
+
+        <div class="contact-layout">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <div class="success-message" id="successMessage">
+                    Thank you! Your message has been sent successfully.
+                </div>
+                <form id="contactForm" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <div class="error-message">Please enter your first name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <div class="error-message">Please enter your last name</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="website">Website (Optional)</label>
+                        <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="farmSize">Farm Size (acres)</label>
+                            <input type="number" id="farmSize" name="farmSize" min="0">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cropType">Primary Crop Type</label>
+                        <select id="cropType" name="cropType">
+                            <option value="">Select your primary crop</option>
+                            <option value="wheat">Wheat</option>
+                            <option value="corn">Corn</option>
+                            <option value="rice">Rice</option>
+                            <option value="soybeans">Soybeans</option>
+                            <option value="vegetables">Vegetables</option>
+                            <option value="fruits">Fruits</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Contact Date</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="form-group range-group">
+                        <label for="experience">Farming Experience (Years)</label>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <input type="range" id="experience" name="experience" min="0" max="50" value="5"
+                                style="flex: 1;">
+                            <span class="range-value" id="experienceValue">5</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required
+                            placeholder="What can we help you with?">
+                        <div class="error-message">Please enter a subject</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tell us more about your needs or questions..."></textarea>
+                        <div class="error-message">Please enter your message</div>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for farming tips and updates</label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the terms and conditions *</label>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="reset" class="btn btn-secondary">Clear Form</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h3>Address</h3>
+                        <p>123 Agricultural Avenue<br>Green Valley, Farm State 12345</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@cropcare.com">info@cropcare.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🕒</div>
+                    <div class="contact-details">
+                        <h3>Business Hours</h3>
+                        <p>Mon - Fri: 8:00 AM - 6:00 PM<br>Sat: 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="download-section">
+            <h3>Need More Information?</h3>
+            <p>Download our comprehensive farming guide and resource brochure.</p>
+            <a href="assets/media/brochure.pdf" download class="download-link">
+                📄 Download Brochure
+            </a>
+        </div>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 CropCare. All rights reserved. | We're here to help you grow!</p>
+    </footer>
+</body>
+
+</html>
